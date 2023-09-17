@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+    header {
+        nav {
+            position: relative;
+
+            ul {
+                padding: 15px;
+                border-radius: 5px;
+                position: absolute;
+                right: 0;
+                top: 90px;
+                width: 150px !important;
+                height: 200px;
+                flex-direction: column;
+                animation: slide-left .5s linear both
+            }
+        }
+    }
+    
+    @keyframes slide-left {
+        0% {
+            transform: translateX(30px)
+        }
+
+        50% {
+            transform: translateX(-10px)
+        }
+        100% {
+            transform: translateX(0px)
+        }
+    }
+}
+
+.active {
+    font-weight: 900 !important;
+}
